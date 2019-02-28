@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hilly Golf Club on Hilly Golf Theme</title>
+    <link>https://hillygolf.github.io/</link>
+    <description>Recent content in Hilly Golf Club on Hilly Golf Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright 2019, GoAndMake.app</copyright>
+    <lastBuildDate>Wed, 09 Jan 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://hillygolf.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About Hilly Golf Club</title>
+      <link>https://hillygolf.github.io/about/</link>
+      <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hillygolf.github.io/about/</guid>
+      <description> Here goes some interesting information about the club.
+Tips for content creators:  the about page is not limited to text block this page is as flexible as any other marketing page you can  insert image add sections add columns embed video   </description>
+    </item>
+    
+    <item>
+      <title>Club Activities</title>
+      <link>https://hillygolf.github.io/club-activities/</link>
+      <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hillygolf.github.io/club-activities/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Go and Talk Page Builder</title>
+      <link>https://hillygolf.github.io/edit/</link>
+      <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hillygolf.github.io/edit/</guid>
+      <description>Hover on the left edge of the screen to manage sites and pages, or load remote data.
+Hover on the top edge of a section to manage the section.</description>
+    </item>
+    
+    <item>
+      <title>Hilly Golf Forms</title>
+      <link>https://hillygolf.github.io/forms/</link>
+      <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hillygolf.github.io/forms/</guid>
+      <description>undefined</description>
+    </item>
+    
+    <item>
+      <title>Hilly Golf Games Calendar</title>
+      <link>https://hillygolf.github.io/calendar/</link>
+      <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hillygolf.github.io/calendar/</guid>
+      <description>The games calendar is published for members to check upcoming games and the location.
+To join a game, members must register 1 week before the game, and pay the associated costs.</description>
+    </item>
+    
+    <item>
+      <title>Links</title>
+      <link>https://hillygolf.github.io/links/</link>
+      <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hillygolf.github.io/links/</guid>
+      <description>Hover on the left edge of the screen to manage sites and pages, or load remote data.
+Hover on the top edge of a section to manage the section.</description>
+    </item>
+    
+    <item>
+      <title>Privacy Policy</title>
+      <link>https://hillygolf.github.io/privacy/</link>
+      <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hillygolf.github.io/privacy/</guid>
+      <description> Here goes your privacy policy. how you collect and use personal information, and handle information with care.
+Tips for Content Creators  the page is not limited to text block. you can present information in columns. For example, one column for legal text, and another column for text in plain English  </description>
+    </item>
+    
+    <item>
+      <title>Terms of Use</title>
+      <link>https://hillygolf.github.io/terms/</link>
+      <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://hillygolf.github.io/terms/</guid>
+      <description> Here goes the terms of using this website.
+Tips for Content Creators  the page is not limited to text block. you can present information in columns. For example, one column for legal text, and another column for text in plain English  </description>
+    </item>
+    
+  </channel>
+</rss>
