@@ -1,7 +1,6 @@
-<!DOCTYPE html><html class="gt-edit-mode"  lang="en-us">
+<!DOCTYPE html><html class=""  lang="en-us">
   <head>
-    <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Club Activities | Hilly Golf Theme</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -21,104 +20,156 @@
 <link href="/css/styles.css" rel="stylesheet" />
 
 
-<link rel="stylesheet" href="/css/prism.css">
-<link rel="stylesheet" href="/css/mavo-1.7beta.css">
-<link rel="stylesheet" href="/css/awesomplete.css">
 
 
+  
+  
+  
+  <style>
+  
+@keyframes slowRightEntry {
+  0% {
+    transform: translateX(-100vw);
+    opacity: 0.3;
+  }
+50% {
+   opacity: .5;
+}
+
+  90% {
+   transform: translateX(0vw);
+   opacity: .8;  
+   }
+  100% {
+    transform: translateX(0vw);
+   opacity: 0.7;
+}
+}
+
+.slowRightEntry {
+  animation: slowRightEntry 10s linear 10;
+  height: 100%;
+  }
+
+
+@keyframes slowRightExit {
+  0% {
+    transform: translateX(0vw);
+   opacity: 1;
+  }
+
+  50% {
+    opacity: .1;
+ }
+  100% {
+   opacity: .0;
+    transform: translateX(50vw);
+  }
+}
+
+.slowRightExit {
+  animation: slowRightExit 20s linear 5;
+  height: 100%;
+}
+
+  </style>
 
 
     
 <style>
 
+.primary-color-dark {
+      color:  hsl(0, 35%, 20%);
+    }
+    .bg-primary-color-dark {
+      background-color: hsl(0, 35%, 20%);
+      color: rgba(255,255,255,.8);
+    }
+    .b--primary-color-dark {
+      border-color: hsl(0, 35%, 20%);
+    }
+    .bg-primary-color-dark-90 {
+      background-color: hsla(0, 35%, 20%, 90%);
+      color: rgba(255,255,255,.8);
+    }
+    .b--primary-color-dark-90 {
+      border-color: hsla(0, 35%, 20%, 90%);
+    }
 
-section[mv-app].active {
-  min-height: 100vh;
-}
+    .primary-color-first-letter-h3 h3:first-letter {
+      color: hsl(0, 35%, 45%);
+      font-size: 1.2em;
+    }
 
-.gt-vbar[mv-storage] {
- opacity: 0.2;
-}
+    .primary-color {
+      color: hsl(0, 35%, 45%);
+    }
+    .b--primary-color {
+      border-color: hsl(0, 35%, 45%);
+    }
+    .hover-primary-color:hover, .hover-primary-color:focus {
+      color: hsl(0, 35%, 45%);
+    }
+    .hover-bg-primary-color:hover, .hover-bg-primary-color:focus {
+      background-color: hsl(0, 35%, 45%);
+      color: rgba(255,255,255,.8);
+    }
 
-.gt-vbar[mv-storage]:hover, .gt-vbar[mv-storage]:focus {
- opacity: 1;
-}
+    .bg-primary-color {
+      background-color: hsl(0, 35%, 45%);
+      color: rgba(255,255,255,.8);
+    }
 
- 
-.mv-pending-edit {
-  min-width: 4em;
-  min-height: 1em;
-}
+    .primary-color-light {
+      color: hsl(0, 35%, 65%);
+    }
+    .bg-primary-color-light {
+      background-color: hsl(0, 35%, 65%);
+      color: rgba(255,255,255,.8);
+    }
+    .b--primary-color-light {
+      border-color: hsl(0, 35%, 65%);
+    }
+    .primary-color-lighter {
+      color: hsl(0, 35%, 80%);
+    }
+    .bg-primary-color-lighter {
+      background-color: hsl(0, 35%, 80%);
+      color: rgba(255,255,255,.9);
+    }
+    .b--primary-color-lighter {
+      border-color: hsl(0, 35%, 80%);
+    }
 
- 
-.animate-edit-cta {
-  transition: margin 1s ease-in-out, padding 1s ease-in-out;
-}
 
-.move-x-2 {
-  transform: translateX(2rem);
-}
-.move-y-2 {
-  transform: translateY(2rem);
-}
-.move-xy-2 {
-  transform: translate(2rem, 2rem);
-}
+    .accent-color {
+      color: hsl(8,45%,45%);
+    }
+    .bg-accent-color {
+      background-color: hsl(8,45%,45%);
+      color: rgba(255,255,255,.8);
+    }
+    .b--accent-color {
+      border-color: hsl(8,45%,45%);
+    }
 
-@media (min-width: 36em) {
-   
-  .inline-form-ns {
-    width: 52rem;
-    max-width: 96vw;
-  }
-
-   
-  .ff-ns {
-    min-width: 12rem;
-  }
-
-}
-
-   
-  [mv-app][mv-mode="edit"] {
-    min-height: 30em;
-  }
-  img.mv-empty[mv-mode="edit"] {
-    padding: 4rem;
-  }
-  img.mv-empty[mv-mode="edit"]:after {
-    content: " Enter Image URL";
-  }
-  [mv-app][mv-mode="edit"].min-vh-100, [mv-app][mv-mode="edit"].gmws-slide {
-    min-height: 100vh;
-  }
-
-  input:invalid {
-    outline: 2px solid red;
-  }
-
-  section:first-child .gt-move-up,
-  section:last-child .gt-move-down {
-    display: none;
-  }
-
-  button.mv-add.dn {
-    display: none;
-  }
-  [mv-mode="edit"]   button.mv-add.dn, [mv-mode="edit"] .show-in-edit.dn {
-    display: inline-block;
-  }
-
-  section[mv-mode="edit"] nav {
-    padding-top: 2rem;
-  }
+    .accent-color-light {
+      color: hsl(8,45%,65%);
+    }
+    .bg-accent-color-light {
+      background-color: hsl(8,45%,65%);
+      color: rgba(255,255,255,.8);
+    }
+    .b--accent-color-light {
+      border-color: hsl(8,45%,65%);
+    }
 
 
 </style>
 <meta property="og:title" content="Club Activities" />
 <meta property="og:description" content="hilly golf club activities" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://hillygolf.github.io/club-activities/" /><meta property="article:published_time" content="2019-01-09T00:00:00&#43;00:00"/>
+<meta property="og:url" content="https://hilly-golf.github.io/club-activities/" /><meta property="article:published_time" content="2019-01-09T00:00:00&#43;00:00"/>
 <meta property="article:modified_time" content="2019-01-09T00:00:00&#43;00:00"/>
 
 <meta itemprop="name" content="Club Activities">
@@ -150,7 +201,7 @@ section[mv-app].active {
   <div id="site-page-settings">
   
 <div onclick="" class="active off-canvas-dashboard gt-vbar z-1 bg-white fixed left-0 top-0 bottom-0 o-0 hover-o-90 mw2 flex flex-column justify-center"
- mv-storage="none" 
+
 >
   <div class="flex-auto"></div>
   <div> 
@@ -158,45 +209,6 @@ section[mv-app].active {
       <button aria-label="exit slides" type="button" class="pointer gt-label gt-exit-slides bg-orange w-100 pa1 v-mid mb2 dim br2 f5 fw9">&#x21c5;</button>
       <div class="w5 dn gt-tooltip bg-black-80 white-90 pa1 absolute top-2 left-2 ">Exit slides and browse as normal page.</div>
     </div>
-    
-    <div class="mv-bar dn"></div>
-    <input hidden property="current_base_app" mv-storage="none" />
-    <div class="relative">
-      <button
-      mv-action="invoke('toggleClass', base_app_list, '', 'active'),
-      invoke('addClass', base_app_list, 'html', 'gt-edit-mode', true)
-      "
-      aria-label="hide this vertical toolbar" type="button" class="pointer gt-label bg-light-gray w-100 pa1 v-mid mv2 dim br2 f5 fw9">&lt;</button>
-      <div class="w5 dn gt-tooltip bg-black-80 white-90 pa1 absolute top-2 left-2 ">Hide this toolbar. </div>
-    </div>
-    <div class="relative">
-      <button
-      mv-action="invoke('toggleClass', base_app_list, 'html', 'gt-edit-mode', true)"
-      aria-label="hide section toolbars" type="button" class="pointer gt-label bg-light-gray w-100 pa1 v-mid mv2 dim br2 f5 fw9">
-        <i class="fas fa-th" data-fa-mask="fas fa-square" data-fa-transform="shrink-3 up-9"></i>
-      </button>
-      <div class="w5 dn gt-tooltip bg-black-80 white-90 pa1 absolute top-2 left-2 ">Toggle section toolbars. </div>
-    </div>
-
-
-
-    
-
-    <div class="relative">
-      <button type="button"
-      mv-action="set(current_base_app,if(current_base_app = 'page_app','','page_app'))"
-      class="pointer gt-label pa1 v-mid mv2 dim br2"><i class="fas fa-fw fa-file-alt"></i></button>
-      <div class="w5 dn gt-tooltip bg-black-80 white-90 pa1 absolute top-2 left-2 ">Manage page setting </div>
-    </div>
-    <div class="relative">
-      <button type="button"
-      mv-action="set(current_base_app,if(current_base_app = 'site_app','','site_app'))"
-      class="pointer gt-label pa1 v-mid mv2 dim br2"><i class="fas fa-fw fa-globe"></i></button>
-      <div class="w5 dn gt-tooltip bg-black-80 white-90 pa1 absolute top-2 left-2 ">Manage site setting </div>
-    </div>
-
-
-
     
 
   </div>
@@ -206,7 +218,12 @@ section[mv-app].active {
   </div>
   <article id="webslides" class="disabled">
     
+
+    
       
+        
+         
+          
 
 
 
@@ -490,58 +507,466 @@ section[mv-app].active {
 </section>
 
 
+        
       
-<section class="relative min-vh-100 flex flex-column" >
+        
+         
+          
 
-  
-  <div class="relative tc-l pa2 pa3-m pa4-l center flex-grow-1 w-90 mw9 flex flex-column " >
-    <div class="flex-auto w-100 black-60 tracked flex flex-column justify-center">
-      <div class="tc-l ph3">
 
-        <div class="" >
-          <h1 class="f2 f1-m f-5-l tracked fw4 mb0 lh-title  ">Loading Editor</h1>
+
+
+
+
+
+
+
+
+<section 
+  class="alternate gt-mv-off relative flex flex-column mid-gray" ><div class="flex-auto flex flex-column justify-center
+  bg-white-90
+  fadeIn
+  black-40
+  "
+  >
+
+    
+
+    
+
+
+
+
+<figure class="ma0">
+	<picture>
+    
+      
+  		  
+  		  
+    		
+    		
+    		
+      
+    
+    
+      
+    
+  </picture>
+</figure>
+
+    
+
+
+
+
+<figure class="ma0">
+	<picture>
+    
+      
+  		  
+  		  
+    		
+    		
+    		
+      
+    
+    
+      
+    
+  </picture>
+</figure>
+<span class="absolute absolute--fill
+    bg-transparent"
+    ></span><div class="cf w-100 relative  center flex flex-wrap mw8"
+    >
+      
+      <div 
+      class="image-column w-100 z-0 flex flex-wrap fl
+      
+      static
+      even-order-1-ns
+      left--25-ns
+      w-50-ns
+      items-center">
+        <div class="tc overflow-hidden relative  w-100 flex flex-column justify-center items-center
+
+        h-100"
+        
+        > 
+
+        
+
+        
+        
+          <img class="mw-100 maxh-100
+          o-100
+          of-scale-down
+          br0"
+          
+          src="https://source.unsplash.com/_-6iQvIunqA/600x400"
+          alt=""
+          >
+          
+        
         </div>
-        <div class="">
-          <h2 class="fw1 f3 black-80 mt3 mb4 " > The page builder relies on JavaScript to work. If you see this page after page loads, it means JavaScript is not enabled, or not working properly. </h2>
+      </div>
+      
+      <div class="text-column z-0 center w-100 mw7 flex flex-auto pa2 pa3-m pa4-l fl
+      w-50-ns
+      justify-center
+      
+      "
+      >
+        
+        <div class="text-card w-100 pa3 relative
+        
+        
+        
+        
+        f5-ns
+        fw4-ns
+        
+        
+        
+        w-100-ns
+        "
+        
+        >
+          <span class="z--1 absolute absolute--fill bg-black-"
+          
+          >
+          </span>
+
+          <p  class="ma0 pv2"></p>
+
+          <h2 class="ma0 pa2
+          pv3-ns
+          ph0-ns
+          
+          
+          
+          
+          tc
+          f2-ns
+          fw7-ns
+          
+          
+          ttc
+          "
+          
+          >
+          <span  class="">Activity one</span>
+          </h2>
+          <div class="pa2 "
+          
+          >
+            
+
+            <div class=" markdown lh-copy
+            
+            
+            "  >
+              
+                <p>Description of activity one</p>
+
+<p>Tips for content creator:</p>
+
+<ul>
+<li><p>click on arrow icon (&lt;) to hide the vertical toolbar to make room for editor toolbar</p></li>
+
+<li><p>click on T icon (T for toggle) to change toolbars, or hide toolbar. Click on keyboard icon to to show text formatting options.</p></li>
+
+<li><p>drag the slider to change space allocation between text and image.</p></li>
+
+<li><p>images can float to the left or right to create alternate sections</p></li>
+</ul>
+
+              
+            </div>
+            
+
+          </div>
+          
+
         </div>
 
       </div>
 
-    </div>
+    </div> 
+    
 
-    <div class="vh-25"></div>
-  </div>
+  </div> 
 
 </section>
 
 
+        
+      
+        
+         
+          
+
+
+
+
+
+
+
+
+
+
+<section 
+  class="alternate gt-mv-off relative flex flex-column mid-gray" ><div class="flex-auto flex flex-column justify-center
+  bg-white-70
+  fadeIn
+  black-40
+  "
+  >
+
+    
+
+    
+
+
+
+
+<figure class="ma0">
+	<picture>
     
       
-        
-        
-          
+  		  
+  		  
+    		
+    		
+    		
       
-        
-        
-          
+    
+    
       
+    
+  </picture>
+</figure>
+
+    
+
+
+
+
+<figure class="ma0">
+	<picture>
+    
+      
+  		  
+  		  
+    		
+    		
+    		
+      
+    
+    
+      
+    
+  </picture>
+</figure>
+<span class="absolute absolute--fill
+    bg-transparent"
+    ></span><div class="cf w-100 relative  center flex flex-wrap mw8"
+    >
+      
+      <div 
+      class="image-column w-100 z-0 flex flex-wrap fl
+      
+      static
+      even-order-1-ns
+      left--25-ns
+      w-50-ns
+      items-center">
+        <div class="tc overflow-hidden relative  w-100 flex flex-column justify-center items-center
+
+        h-100"
+        
+        > 
+
+        
+
         
         
+          <img class="mw-100 maxh-100
+          o-100
+          of-scale-down
+          br0"
           
+          src="https://source.unsplash.com/De45n7FHxZA/600x400"
+          alt=""
+          >
+          
+        
+        </div>
+      </div>
+      
+      <div class="text-column z-0 center w-100 mw7 flex flex-auto pa2 pa3-m pa4-l fl
+      w-50-ns
+      justify-center
+      
+      "
+      >
+        
+        <div class="text-card w-100 pa3 relative
+        
+        
+        
+        
+        f5-ns
+        fw4-ns
+        
+        
+        
+        w-100-ns
+        "
+        
+        >
+          <span class="z--1 absolute absolute--fill bg-black-"
+          
+          >
+          </span>
+
+          <p  class="ma0 pv2"></p>
+
+          <h2 class="ma0 pa2
+          pv3-ns
+          ph0-ns
+          
+          
+          
+          
+          tc
+          f2-ns
+          fw7-ns
+          
+          
+          ttc
+          "
+          
+          >
+          <span  class="">Activity Two</span>
+          </h2>
+          <div class="pa2 "
+          
+          >
+            
+
+            <div class=" markdown lh-copy
+            
+            
+            "  >
+              
+                <p>Description of activity one</p>
+
+<p>Tips for content creator:</p>
+
+<ul>
+<li><p>click on arrow icon (&lt;) to hide the vertical toolbar to make room for editor toolbar</p></li>
+
+<li><p>click on T icon (T for toggle) to change toolbars, or hide toolbar. Click on keyboard icon to to show text formatting options.</p></li>
+
+<li><p>drag the slider to change space allocation between text and image.</p></li>
+
+<li><p>images can float to the left or right to create alternate sections</p></li>
+</ul>
+
+              
+            </div>
+            
+
+          </div>
+          
+
+        </div>
+
+      </div>
+
+    </div> 
+    
+
+  </div> 
+
+</section>
+
+
+        
       
            
-        
+         
           
+
+
+
+<section 
+  class="gt-mv-on relative flex flex-column justify-end" ><div class="flex-auto tc bg-black-10 gmws dn">
+    <div class="pt5 f-6-l f1-m f2 flex flex-column justify-center">
+      <span class="flex-auto"></span>
+      <i class="fas fa-comments white slide-trigger pointer"></i>
+      <span class="flex-auto"></span>
+    </div>
+  </div>
+  <div class="bg-black-80
+  white-80
+  "
+  >
+    
+<nav class="relative f6"  >
+  <div class="w-90 mw8 center ph2 pv3" >
+
+    <ul class="list cf ma0 ph3 ph4-l pv1 flex justify-center flex-wrap link-gold " >
+      
+        
+          <li class="pv2 fl">
+            <a href="/"  class="link ph3 dim ">
+              Home
+            </a>
+          </li>
+        
+
+      
+    </ul>
+
+    <ul class="list cf ma0 ph3 ph4-l pv1 flex justify-center flex-wrap link-white-80" >
+    
+      
+        <li class="pv2 fl" >
+          <a class="link ph3 dim " href="/terms/">Terms</a>
+        </li>
+      
+        <li class="pv2 fl" >
+          <a class="link ph3 dim " href="/privacy/">Privacy</a>
+        </li>
+      
+    
+    </ul>
+  </div>
+</nav>
+
+    <div class="tc ph4 pv2 f7" >
+       Copyright 2019. All rights reserved. 
+    </div>
+    <div class="tc pa3 f7 bg-black-80 white-60 pb6 pb3-l">
+      Hilly Golf theme by
+      <a class="white-70 hover-white" href="https://we.goandmake.app">GoAndMake.app</a>
+      <a class="white-70 hover-white" href="https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a>
+      Powered by <a class="white-70 hover-white" href="https://we.goandmake.app">goandmake.app</a>
+      
+        <a class="dib pa3 white-40 hover-white" rel="nofollow" href="index.goandmake.html">Edit</a>
+      
+    </div>
+  </div> 
+
+</section>
+        
       
     
 
 
     
-    
-      
-        
-        
-      
      
 
     
@@ -631,15 +1056,7 @@ section[mv-app].active {
 </div>
 </div>
 </footer>
- 
-    
 
-    <script data-source="homepage-index">
-      
-      var gtpb = { maxapp: 10, default:  JSON.parse("{\"AllSections\":[{\"data\":{\"appearance\":{\"section_background\":\"bg-black-90\",\"text_color\":\"white-80\",\"trigger_class\":\"slide-trigger\"},\"base_image\":{\"responsive\":false},\"bg_icon\":{\"bg_icon_display\":\"dn\",\"icon_mask\":\"square\",\"inner_icon\":\"font\",\"inner_icon_transform\":\"shrink-6\"},\"card_font_size\":5,\"card_font_weight\":\"4\",\"card_overlay\":0,\"card_text_align\":\"tc\",\"card_width\":100,\"content\":\"Golf, fun and friendship\",\"cta\":{\"align\":\"center\",\"background_color\":\"bg-light-gray\",\"block_button_width\":50,\"border_color\":\"b--light-gray\",\"border_radius\":\"br0\",\"button_font_size\":\"4\",\"button_text_color\":\"mid-gray\",\"icon_mask\":\"circle\",\"inner_icon\":\"info\",\"inner_icon_transform\":\"shrink-4\",\"mv\":3,\"name\":\" Quick Start \",\"ph\":3,\"pv\":2,\"url\":\"#\"},\"cta_display\":\"dn\",\"height_reference\":\"h\",\"image\":{\"animation\":\"none\",\"overlay_background\":\"bg-black-20\",\"responsive\":false,\"src\":\"https://source.unsplash.com/h7aVq-7FfPw/1366x768\"},\"image_align_h\":\"left--35-ns\",\"image_br\":\"br0\",\"image_column_width\":30,\"image_height\":100,\"image_layer\":\"static\",\"image_opacity\":100,\"image_order\":\"even-order-1-ns\",\"image_under_text\":false,\"intro\":\" \",\"menu\":{\"global\":[{\"identifier\":\"tutorials\",\"menu\":\"global\",\"name\":\"Home\",\"parent\":\"\",\"post\":\"\",\"pre\":\"\",\"url\":\"/\",\"weight\":5},{\"name\":\"Calendar\",\"url\":\"/calendar/\"},{\"name\":\"Club Activities\",\"url\":\"/club-activities/\"},{\"name\":\"Forms\",\"url\":\"/form/\"},{\"name\":\"Links\",\"url\":\"/links/\"},{\"identifier\":\"about\",\"menu\":\"global\",\"name\":\"About Us\",\"parent\":\"\",\"post\":\"\",\"pre\":\"\",\"url\":\"/about/\",\"weight\":15}],\"iconmenu\":[{\"identifier\":\"\",\"menu\":\"iconmenu\",\"name\":\"Go Account\",\"parent\":\"\",\"post\":\"\",\"pre\":\"Go\",\"url\":\"#\",\"weight\":0}]},\"object_fit_class\":\"of-cover\",\"quote_display\":\"dn\",\"section_max_width\":\"mw8\",\"text_column_class\":\"w-70-ns\",\"title\":\"Club Activities\",\"title_align\":\"tc\",\"title_font_size\":\"2\",\"title_font_weight\":\"7\",\"title_ph\":\"0\",\"title_pv\":\"3\",\"title_transform\":\"ttc\"},\"data_key\":null,\"id\":\"s1ig6sqba\",\"is_global\":null,\"partial\":\"goandtalk/cover/two-columns-text-and-image-with-nav\"},{\"data\":{\"appearance\":{\"icon_color\":\"gold\",\"section_background\":\"bg-white-90\",\"slide_animation\":\"fadeIn\",\"text_color\":\"black-40\"},\"base_image\":{\"responsive\":false},\"bg_icon\":{\"bg_icon_display\":\"dn\",\"inner_icon_transform\":\"shrink-6\"},\"card_font_size\":\"5\",\"card_font_weight\":\"4\",\"card_overlay\":0,\"card_width\":100,\"content\":\"Description of activity one\\n\\nTips for content creator:\\n\\n* click on arrow icon (\\u003c) to hide the vertical toolbar to make room for editor toolbar\\n\\n* click on T icon (T for toggle) to change toolbars, or hide toolbar. Click on keyboard icon to to show text formatting options.\\n\\n* drag the slider to change space allocation between text and image.\\n\\n* images can float to the left or right to create alternate sections\",\"cta\":{\"align\":\"center\",\"background_color\":\"bg-light-gray\",\"block_button_width\":50,\"border_color\":\"b--light-gray\",\"border_radius\":\"br0\",\"button_font_size\":\"4\",\"button_text_color\":\"mid-gray\",\"icon_mask\":\"circle\",\"inner_icon\":\"info\",\"inner_icon_transform\":\"shrink-4\",\"mv\":3,\"name\":\" Quick Start \",\"ph\":3,\"pv\":2,\"url\":\"#\"},\"cta_display\":\"dn\",\"height_reference\":\"h\",\"image\":{\"overlay_background\":\"bg-transparent\",\"responsive\":false},\"image_align_h\":\"left--25-ns\",\"image_br\":\"br0\",\"image_column_width\":50,\"image_height\":100,\"image_layer\":\"static\",\"image_opacity\":100,\"image_order\":\"even-order-1-ns\",\"image_source\":\"https://source.unsplash.com/_-6iQvIunqA/600x400\",\"image_under_text\":false,\"is_global\":false,\"object_fit_class\":\"of-scale-down\",\"quote_display\":\"dn\",\"text_column_class\":\"w-50-ns\",\"title\":\"Activity one\",\"title_align\":\"tc\",\"title_font_size\":\"2\",\"title_font_weight\":\"7\",\"title_ph\":\"0\",\"title_pv\":\"3\",\"title_transform\":\"ttc\"},\"data_key\":null,\"id\":\"sip8q2hu4\",\"is_global\":null,\"partial\":\"goandtalk/slides/alternate-two-columns-text-and-image\"},{\"data\":{\"appearance\":{\"icon_color\":\"gold\",\"section_background\":\"bg-white-70\",\"slide_animation\":\"fadeIn\",\"text_color\":\"black-40\"},\"base_image\":{\"responsive\":false},\"bg_icon\":{\"bg_icon_display\":\"dn\",\"inner_icon_transform\":\"shrink-6\"},\"card_font_size\":\"5\",\"card_font_weight\":\"4\",\"card_overlay\":0,\"card_width\":100,\"content\":\"Description of activity one\\n\\nTips for content creator:\\n\\n* click on arrow icon (\\u003c) to hide the vertical toolbar to make room for editor toolbar\\n\\n* click on T icon (T for toggle) to change toolbars, or hide toolbar. Click on keyboard icon to to show text formatting options.\\n\\n* drag the slider to change space allocation between text and image.\\n\\n* images can float to the left or right to create alternate sections\",\"cta\":{\"align\":\"center\",\"background_color\":\"bg-light-gray\",\"block_button_width\":50,\"border_color\":\"b--light-gray\",\"border_radius\":\"br0\",\"button_font_size\":\"4\",\"button_text_color\":\"mid-gray\",\"icon_mask\":\"circle\",\"inner_icon\":\"info\",\"inner_icon_transform\":\"shrink-4\",\"mv\":3,\"name\":\" Quick Start \",\"ph\":3,\"pv\":2,\"url\":\"#\"},\"cta_display\":\"dn\",\"height_reference\":\"h\",\"image\":{\"overlay_background\":\"bg-transparent\",\"responsive\":false},\"image_align_h\":\"left--25-ns\",\"image_br\":\"br0\",\"image_column_width\":50,\"image_height\":100,\"image_layer\":\"static\",\"image_opacity\":100,\"image_order\":\"even-order-1-ns\",\"image_source\":\"https://source.unsplash.com/De45n7FHxZA/600x400\",\"image_under_text\":false,\"is_global\":false,\"object_fit_class\":\"of-scale-down\",\"quote_display\":\"dn\",\"text_column_class\":\"w-50-ns\",\"title\":\"Activity Two\",\"title_align\":\"tc\",\"title_font_size\":\"2\",\"title_font_weight\":\"7\",\"title_ph\":\"0\",\"title_pv\":\"3\",\"title_transform\":\"ttc\"},\"data_key\":null,\"id\":\"smfvwc9wj\",\"is_global\":null,\"partial\":\"goandtalk/slides/alternate-two-columns-text-and-image\"},{\"data\":\"\",\"data_key\":null,\"id\":\"gt_footer\",\"is_global\":true,\"partial\":\"goandtalk/footer/default_footer\"},{\"id\":\"gt_content\",\"partial\":\"goandtalk/content/text-block\"}],\"IsPage\":true,\"Params\":{\"date\":\"2019-01-09T00:00:00Z\",\"description\":\"hilly golf club activities\",\"draft\":false,\"gt_page_builder\":true,\"header_class\":\"bg-transparent\",\"icon_mask\":\"square\",\"inner_icon\":\"font\",\"inner_icon_transform\":\"shrink-6\",\"iscjklanguage\":false,\"lastmod\":\"2019-01-09T00:00:00Z\",\"lightness\":0,\"lightness_dark\":0,\"lightness_light\":0,\"lightness_lighter\":0,\"logo_url\":\"/images/logos/icon-on-dark.svg\",\"primary_hue\":0,\"publishdate\":\"2019-01-09T00:00:00Z\",\"saturation\":0,\"skip_cover_nav\":false,\"skip_slide_animation\":false,\"title\":\"Club Activities\",\"type\":\"presentation\"},\"content\":\"\",\"filepath\":\"club-activities.md\"}") };
-      
-    </script>
-    
     
       
 <script src="/js/webslides.min.js?v=0.0002"></script>
@@ -651,53 +1068,8 @@ section[mv-app].active {
 
 
 
-<script src="/js/lib/markdown-it.min.js" ></script>
-<script src="/js/lib/purify.min.js" ></script>
-<script src="/js/lib/prism.js" ></script>
-
-<script src="/js/lib/mavo/1.7beta-bind/mavo.js?v=0.0002"></script>
-<script src="/js/lib/mavo/1.7beta-bind/mavo-markdownit.js?v=0.0001"></script>
-
-
-<script src="/js/lib/awesomplete.js" ></script>
-<script src="/js/lib/doT.min.js" ></script>
-
-<script src="/js/lib/pouchdb.min.js" ></script>
-<script src="/js/lib/clipboard.min.js" ></script>
-<script src="/js/lib/toml-j0.4.min.js" ></script>
-<script src="/js/lib/js-yaml.min.js" ></script>
-<script src="/js/lib/dragula.min.js" ></script>
-<script src="/js/lib/meta-matter-custom.js" ></script>
-
-
-<script src="/js/config.js" ></script>
-<script src="/js/builder/partial.js" ></script>
-<script src="/js/builder/goandtalk.editor.js?v=0.0006"></script>
-
-
-
     
 
-    
-    <datalist id="width_of_container">
-      <option value="0">
-      <option value="10">
-      <option value="20">
-      <option value="30">
-      <option value="40">
-      <option value="50">
-      <option value="60">
-      <option value="70">
-      <option value="80">
-      <option value="90">
-      <option value="100">
-    </datalist>
-    <datalist id="height_of_container">
-      <option value="25">
-      <option value="50">
-      <option value="75">
-      <option value="100">
-    </datalist>
     
   </body>
 </html>

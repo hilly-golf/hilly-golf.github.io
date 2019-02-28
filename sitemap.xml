@@ -3,33 +3,73 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   
+  <url>
+    <loc>https://hilly-golf.github.io/about/</loc>
+    <lastmod>2019-01-09T00:00:00+00:00</lastmod>
+  </url>
   
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+  <url>
+    <loc>https://hilly-golf.github.io/club-activities/</loc>
+    <lastmod>2019-01-09T00:00:00+00:00</lastmod>
+  </url>
   
   
   
   
   
   <url>
-    <loc>https://hillygolf.github.io/categories/</loc>
+    <loc>https://hilly-golf.github.io/</loc>
+    <lastmod>2019-01-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://hilly-golf.github.io/forms/</loc>
+    <lastmod>2019-01-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://hilly-golf.github.io/calendar/</loc>
+    <lastmod>2019-01-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://hilly-golf.github.io/links/</loc>
+    <lastmod>2019-01-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://hilly-golf.github.io/privacy/</loc>
+    <lastmod>2019-01-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://hilly-golf.github.io/terms/</loc>
+    <lastmod>2019-01-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  
+  
+  <url>
+    <loc>https://hilly-golf.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   
   
   <url>
-    <loc>https://hillygolf.github.io/tags/</loc>
+    <loc>https://hilly-golf.github.io/tags/</loc>
     <priority>0</priority>
   </url>
   
